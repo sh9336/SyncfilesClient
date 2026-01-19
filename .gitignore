@@ -7,10 +7,22 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+.pnp
+.pnp.js
+
+# Build Output
 dist
 dist-ssr
-*.local
+build
+*.tsbuildinfo
+
+# Local Environment
+.env
+.env.*
+!.env.example
+!.env.test
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +34,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Testing
+coverage
+.nyc_output
+
+# Hosting & Deployment
+.vercel
+.netlify
